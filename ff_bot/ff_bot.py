@@ -280,7 +280,7 @@ def get_power_rankings(league, week=None):
 
     score = ['%s - %s' % (i[0], i[1].team_name) for i in power_rankings
              if i]
-    text = ['Power Rankings'] + score
+    text = ['Power Rankings'] + score + "\n\n" + random_phrase()
     return '\n'.join(text)
 
 def get_trophies(league, week=None):
@@ -462,7 +462,7 @@ if __name__ == '__main__':
 ##################################FUCK AROUND HERE##############################################################################
 
     sched.add_job(bot_main, 'cron', ['get_power_rankings'], id='power_rankings',
-        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='9,10,11,12,13,14', minute=17, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='9,10,11,12,13,14', minute=23, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
 
 ##################################FUCK AROUND HERE##############################################################################
