@@ -207,7 +207,9 @@ def random_phrase():
                '-PURE SKILL'
                '-Pay Me has always threatened to destroy this league by creating his own, and it\'s called Regulation Elite',
                '-YOU SUCK AT FANTASY FOOTBALL',
-               '-My bench for your starters and we have a deal.']
+               '-My bench for your starters and we have a deal.',
+               '-Regulation Bot 2.5 is best bot.',
+               '-Definition, Pout and Out: When someone rages so hard they quit and go silent.',]
     return [random.choice(phrases)]
 ######################################FUCK AROUND HERE##########################################################################
 
@@ -473,7 +475,7 @@ if __name__ == '__main__':
 ##################################THIS IS RANDOMSAY##############################################################################
 
     sched.add_job(bot_main, 'cron', ['get_projected_scoreboard'], id='projected_scoreboards',
-        day_of_week='mon,tue,wed,thu,fri,sat', hour='11,14,17,20', minute=10, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='mon,tue,wed,thu,fri,sat', hour='11,14,17,20', minute=35, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
 
 ##################################THIS IS RANDOMSAY##############################################################################
