@@ -407,7 +407,7 @@ def bot_main(function):
         text = get_close_scores(league)
     elif function=="get_power_rankings":
         text = get_power_rankings(league)
-        text = text + "\n\n" + random_phrase()
+        text = text + random_phrase()
     elif function=="get_trophies":
         text = get_trophies(league)
     elif function=="get_final":
@@ -463,7 +463,7 @@ if __name__ == '__main__':
 ##################################FUCK AROUND HERE##############################################################################
 
     sched.add_job(bot_main, 'cron', ['get_power_rankings'], id='power_rankings',
-        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='9,10,11,12,13,14', minute=10, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='9,10,11,12,13,14', minute=12, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
 
 ##################################FUCK AROUND HERE##############################################################################
