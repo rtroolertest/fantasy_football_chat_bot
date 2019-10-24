@@ -250,7 +250,7 @@ def get_matchups(league, week=None):
     score = ['%s(%s-%s) vs %s(%s-%s)' % (i.home_team.team_name, i.home_team.wins, i.home_team.losses,
              i.away_team.team_name, i.away_team.wins, i.away_team.losses) for i in matchups
              if i.away_team]
-    text = ['Matchups'] + score + '\n' + random_phrase()
+    text = ['Matchups'] + score + "\n" + random_phrase()
     return '\n'.join(text)
 
 def get_close_scores(league, week=None):
@@ -462,7 +462,7 @@ if __name__ == '__main__':
 ##################################FUCK AROUND HERE##############################################################################
 
     sched.add_job(bot_main, 'cron', ['get_matchups'], id='matchups',
-        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='9,10,11,12,13,14,15', minute=51, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='9,10,11,12,13,14,15', minute=54, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
 
 ##################################FUCK AROUND HERE##############################################################################
