@@ -471,7 +471,7 @@ if __name__ == '__main__':
 ##################################THIS IS RANDOMSAY##############################################################################
 
     sched.add_job(bot_main, 'cron', ['get_projected_scoreboard'], id='projected_scoreboards',
-        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='11,14,17,20', minute=10, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='mon,tue,wed,thu,fri,sat', hour='11,14,17,20', minute=10, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
 
 ##################################THIS IS RANDOMSAY##############################################################################
@@ -486,10 +486,10 @@ if __name__ == '__main__':
         day_of_week='tue,thu', hour=19, minute=30, start_date=ff_start_date, end_date=ff_end_date,
         timezone=game_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_close_scores'], id='close_scores',
-        day_of_week='sun,mon,thu', hour=13, minute=32, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='sun,mon', hour=18, minute=30, start_date=ff_start_date, end_date=ff_end_date,
         timezone=game_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_final'], id='final',
-        day_of_week='tue', hour=1, minute=30, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='tue,thu', hour=13, minute=36, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_scoreboard_short'], id='scoreboard1',
         day_of_week='fri,mon', hour=7, minute=30, start_date=ff_start_date, end_date=ff_end_date,
