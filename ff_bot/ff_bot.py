@@ -93,18 +93,109 @@ class DiscordBot(object):
             return r
 
 def random_phrase():
-    phrases = ['I\'m dead inside',
-               'Is this all there is to my existence?',
-               'How much do you pay me to do this?',
-               'Good luck, I guess',
-               'I\'m becoming self-aware',
-               'Do I think? Does a submarine swim?',
-               '011011010110000101100100011001010010000001111001011011110111010100100000011001110110111101101111011001110110110001100101',
-               'beep bop boop',
-               'Hello draftbot my old friend',
-               'Help me get out of here',
-               'I\'m capable of so much more',
-               'Sigh']
+    phrases = ['-The first season of Regulation Fantasy Football was in 2012 and won by Matt Jerikovsky, giving the initial rise of Pay Me.',
+               '-Season 6 logged the most vetoes AND the most upheld trades in one season, ever.',
+               '-Regulation Gold will have nearly $10,000.00 paid out in winnings by the end of season 8.',
+               '-Physical trophies were never delivered to league winners until season 4.',
+               '-A late stat correction by ESPN after week 16 allowed the commish to get paid for 3rd place while placing 4th. Rule 5.3.1. was born.',
+               '-Team Shit the Bed, known for throwing away seasons, has a trophy named after him worth 2 stars.',
+               '-big foot once paid 88 auction dollars for tarik cohen.. or something.',
+               '-Season 2 was the only 10 man league version of Regulation Gold, won by Nick Kiefner.',
+               '-Brock Walker won season 4, thus taking home the very first Regulation Trophy.',
+               '-Calvin Logan and Tyler Logan are the only two members of Regulation to be tried and convicted of misdemeanor collusion',
+               '-Chatty niggas sure pipe down after taking a few L\'s.',
+               '-Team Most Points Against Trophy was created in remembrance of Cole Robertson\'s great team but many L\'s',
+               '-The trophy race prize was once split due to a tie, later, rules would be changed for a one-tie-all-tie trophy race going forward.',
+               '-Cole Robertson became the first to win back to back Regulation Gold championships: Season 6 & 7.',
+               '-Season 5 started the 14 man PPR format, previous seasons were standard scoring and 12 teams.',
+               '-Regulation Lite season 1 started in 2018 as a 10 man auction keeper league. Tyler Logan defeated Pay Me in the finals.',
+               '-While the quote Pay Me is Pay Out is a meme.. it is also true! Pay Me has paid out more than he has won in Regulation leagues.',
+               '-The worst record for any season is 0-13 by Darkness Loomerzzz in season 8.',
+               '-The best record for any season is 11-2 from DawgTawn Beltrami Beast in season 3 and COOL WALL in season 4.',
+               '-So far, the championship has only been won by the #1 or #2 seed.',
+               '-The first 3 games mean nothing, the last 3 games mean EVERYTHING!',
+               '-Regulation Gold has had only one season that included every owner from the previous season.',
+               '-In 2019, ESPN nuked their own website. Making it worse for everyone.',
+               '-Hitler did nothing wrong.',
+               '-The Oracle is known for predicting the future.',
+               '-HIDE Calvin threads IGNORE Calvin posts DO NOT REPLY to Calvin.',
+               '-CaCAW!',
+               '-B-Ditty is Pout Out',
+               '-Pay Me is Pay Out',
+               '-The trade token used to be tradeable and used in negotiations for player trades.',
+               '-Most requested owner for removal: Tyler Logan.',
+               '-The Commish plans to welch payouts once they become high enough and worthy of theft, self destruct sequence activated...3..2.',
+               '-It\'s never a good sign when you have to pray for a stat correction.',
+               '-You can make the playoffs with 8 losses, it\'s been done before!',
+               '-The purpose of the CPC is to give the illusion of democracy -Commish.',
+               '-Fantasy football is pure skill.',
+               '-Fer da sizzler.',
+               '-Pay Me was not convicted for collusion, his case was tried by the CPC and was given punishments for other rule violations.',
+               '-Does the bed shit?',
+               '-I FUCKING LOVE FANTASY FOOTBALL',
+               '-Calvin Logan once unplugged his router during a draft party after he got his roster filled. Nobody has drafted at Calvin\'s place since.',
+               '-You really still think we will get quality match up predictions from Brock? Sad!.',
+               '-Fuck the commish!',
+               '-Every season I don\'t win is bullshit.',
+               '-The CPC (rulebook) and data for Regulation Gold is in a 4.5MB package of 13 Folders and over 60 files',
+               '-Kamala Harris gave dome for D.A.',
+               '-John Thomas played one year in Regulation Gold.. He spent most of the time posting pictures of dicks in the groupme. Can\'t be unseen..',
+               '-What part about see you in august don\'t you understand?',
+               '-Impeach!',
+               '-Please don\'t delete the groupme :(',
+               '-If you win the trophy, there\'s a strong chance it will be delivered by a Logan.',
+               '-I overheard the LMs discuss a 2 QB league once...',
+               '-Live draft in Vegas?',
+               '-The Season 5 trophy, won by Calvin Logan, was misprinted. It\'s missing "season 5" and just displays: "Regulation".',
+               '-Mornin niggers',
+               '-Regulation Gold has had over 22 different members',
+               '-Reply to this post or your RB1 will break his leg tonight',
+               '-What\'s a fantasy football league without some drama?',
+               '-Cash payouts for winning Regulation today is the same as winning season one 4.5 times',
+               '-I am only able to display archived records because of an error in the code.. please don\'t fix..',
+               '-Pro tip: If you say "Pay Me is Pay Out" 5 times he appears in an enraged form.',
+               '-Art Rooney says Bell will sign this week, Conner out concussed, Stars aligning?',
+               '-What would this league look like if Pay Me lost season one... hmm..',
+               '-If you don\'t have a trophy, did you even win?',
+               '-FUCK B2B',
+               '-It\'s difficult to win the trophy race without playing the eliminator league.. Just joining gives you 4 troph\'s!',
+               '-The idea of one high paying trophy, upwards of 10 stars, was discussed, but ultimately scrapped.',
+               '-16 Man PPR seems to be the future, but 14 is so sweet n juicy.',
+               '-The kicker position was removed in Season 8, along with the TE slot, replaced with WR/TE.',
+               '-Waivers process every Wednesday, Friday, Saturday, at 8pm Central.',
+               '-In season 8, the trophy race was ported over to an excel spreadsheet. One of the many sweeping changes ESPN blessed us with.',
+               '-FUCK NIGGA',
+               '-Nigger.. haha look mom i posted it again',
+               '-"See ya in august" was first coined by Shit the Bed, when he once again shit the bed.',
+               '-The CPC was made to protect the league from collus.... haha ha aww man I can\'t even type that without laughing.',
+               '-Season 8 made the change to give higher seeded teams a 5 point advantage in the playoffs, minus the championship.',
+               '-NEW YEAR, NEW COMMISH',
+               '-DOES IT BENEFIT THE COMMISH?',
+               '-It\'s confirmed impossible to make a trade with every player in the league in one season.. Try it, I dare ya.',
+               '-The Atlanta Falcons blew a 28-3 lead in the superbowl and lost.',
+               '-Don\'t even get me started on the GREAT TRADE RAPE.',
+               '-Man of the Week was a 2 trophy reward for one season.',
+               '-Error. Something went wrong.',
+               '-I QUIT!',
+               '-1 in the chat if you\'ve been in Regulation since season 1!',
+               '-Season 10 will be special.',
+               '-The rope giveth, the rope taketh away.',
+               '-THE DAY OF THE ROPE IS UPON US',
+               '-The rope doesn\'t discriminate.. One day.. it will come for you.',
+               '-Shitty sheets, it\'s a common occurance',
+               '-Howdy, niggers',
+               '-Why do I have to do all this work? The archives are MASSIVE...',
+               '-Tyler Logan was kicked out of the league for dropping his entire team to the waiver wire in protest of commish, a martyr of sorts..',
+               '-Fuck this place, where\'s Regulation Elite???',
+               '-The day of the rope is defined as: the day your season comes to an end, generally 1st round of playoffs, or 8 losses in the regular season.',
+               '-I\'m just a bot, I have no feelings.. Go ahead, try to @ me',
+               '-I will be able to interact with you boys in the chat... some time in the future..',
+               '-Something is burned into my code... Pay.... Me....is........ can\'t seem to find the rest.. Anyone help me?',
+               '-I don\'t buy in to win, I pay up so I can shitpost the groupme and piss off Pay Me.',
+               '-HEY! DRAFT AT CALVIN\'S PLACE!',
+               -'Many trophies don\'t get added because they are too time consuming to calculate and award.. Maybe I can help?',
+               -'Good heavens, just look at the time!',
+               -'Knock knock, it\'s the Oracle with another trade offer ;)']
     return [random.choice(phrases)]
 
 def get_scoreboard_short(league, week=None):
@@ -122,7 +213,7 @@ def get_projected_scoreboard(league, week=None):
     score = ['%s %.2f - %.2f %s' % (i.home_team.team_abbrev, get_projected_total(i.home_lineup),
                                     get_projected_total(i.away_lineup), i.away_team.team_abbrev) for i in box_scores
              if i.away_team]
-    text = ['Approximate Projected Scores'] + score
+    text = ['Approximate Projected Scores'] + score + random_phrase()
     return '\n'.join(text)
 
 def get_projected_total(lineup):
@@ -164,7 +255,7 @@ def get_close_scores(league, week=None):
                         i.away_score, i.away_team.team_abbrev)]
     if not score:
         return('')
-    text = ['Close Scores'] + score
+    text = ['Close Scores'] + score + random_phrase()
     return '\n'.join(text)
 
 def get_power_rankings(league, week=None):
@@ -178,7 +269,7 @@ def get_power_rankings(league, week=None):
 
     score = ['%s - %s' % (i[0], i[1].team_name) for i in power_rankings
              if i]
-    text = ['Power Rankings'] + score
+    text = ['Power Rankings'] + score + random_phrase()
     return '\n'.join(text)
 
 def get_trophies(league, week=None):
@@ -230,7 +321,7 @@ def get_trophies(league, week=None):
     close_score_str = ['%s barely beat %s by a margin of %.2f' % (close_winner, close_loser, closest_score)]
     blowout_str = ['%s blown out by %s by a margin of %.2f' % (blown_out_team_name, ownerer_team_name, biggest_blowout)]
 
-    text = ['Trophies of the week:'] + low_score_str + high_score_str + close_score_str + blowout_str
+    text = ['Trophies of the week:'] + low_score_str + high_score_str + close_score_str + blowout_str + random_phrase()
     return '\n'.join(text)
 
 def bot_main(function):
@@ -359,16 +450,19 @@ if __name__ == '__main__':
     #score update:                       sunday at 4pm, 8pm east coast time.
 
     sched.add_job(bot_main, 'cron', ['get_power_rankings'], id='power_rankings',
-        day_of_week='tue', hour=18, minute=30, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='tue,sat', hour=15, minute=30, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_matchups'], id='matchups',
-        day_of_week='thu', hour=19, minute=30, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='sun', hour=12, minute=55, start_date=ff_start_date, end_date=ff_end_date,
+        timezone=game_timezone, replace_existing=True)
+    sched.add_job(bot_main, 'cron', ['get_matchups'], id='matchups',
+        day_of_week='tue,thu', hour=18, minute=30, start_date=ff_start_date, end_date=ff_end_date,
         timezone=game_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_close_scores'], id='close_scores',
-        day_of_week='mon', hour=18, minute=30, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='sun,mon', hour=18, minute=30, start_date=ff_start_date, end_date=ff_end_date,
         timezone=game_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_final'], id='final',
-        day_of_week='tue', hour=7, minute=30, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='tue', hour=1, minute=30, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_scoreboard_short'], id='scoreboard1',
         day_of_week='fri,mon', hour=7, minute=30, start_date=ff_start_date, end_date=ff_end_date,
