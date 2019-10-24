@@ -461,8 +461,8 @@ if __name__ == '__main__':
     #score update:                       sunday at 4pm, 8pm east coast time.
 ##################################FUCK AROUND HERE##############################################################################
 
-    sched.add_job(bot_main, 'cron', ['get_trophies'], id='trophies',
-        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='9,10,11,12,13,14', minute=30, start_date=ff_start_date, end_date=ff_end_date,
+    sched.add_job(bot_main, 'cron', ['get_final'], id='final',
+        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='9,10,11,12,13,14', minute=33, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
 
 ##################################FUCK AROUND HERE##############################################################################
