@@ -462,7 +462,7 @@ if __name__ == '__main__':
 ##################################FUCK AROUND HERE##############################################################################
 
     sched.add_job(bot_main, 'cron', ['get_matchups'], id='matchups',
-        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='9,10,11,12,13,14,15', minute=45, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='9,10,11,12,13,14,15', minute=49, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
 
 ##################################FUCK AROUND HERE##############################################################################
@@ -470,12 +470,12 @@ if __name__ == '__main__':
     sched.add_job(bot_main, 'cron', ['get_power_rankings'], id='power_rankings',
         day_of_week='tue,sat', hour=15, minute=30, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
-    sched.add_job(bot_main, 'cron', ['get_matchups'], id='matchups',
-        day_of_week='sun', hour=12, minute=55, start_date=ff_start_date, end_date=ff_end_date,
-        timezone=game_timezone, replace_existing=True)
-    sched.add_job(bot_main, 'cron', ['get_matchups'], id='matchups',
-        day_of_week='tue,thu', hour=18, minute=30, start_date=ff_start_date, end_date=ff_end_date,
-        timezone=game_timezone, replace_existing=True)
+    #sched.add_job(bot_main, 'cron', ['get_matchups'], id='matchups',
+        #day_of_week='sun', hour=12, minute=55, start_date=ff_start_date, end_date=ff_end_date,
+        #timezone=game_timezone, replace_existing=True)
+    #sched.add_job(bot_main, 'cron', ['get_matchups'], id='matchups',
+        #day_of_week='tue,thu', hour=18, minute=30, start_date=ff_start_date, end_date=ff_end_date,
+        #timezone=game_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_close_scores'], id='close_scores',
         day_of_week='sun,mon', hour=18, minute=30, start_date=ff_start_date, end_date=ff_end_date,
         timezone=game_timezone, replace_existing=True)
