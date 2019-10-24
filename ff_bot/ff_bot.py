@@ -205,7 +205,9 @@ def random_phrase():
                '-With this fisher price code, it\'s amazing this even works.',
                '-If only..',
                '-PURE SKILL'
-               '-Pay Me has always threatened to destroy this league by creating his own, and it\'s called Regulation Elite',]
+               '-Pay Me has always threatened to destroy this league by creating his own, and it\'s called Regulation Elite',
+               '-YOU SUCK AT FANTASY FOOTBALL',
+               '-My bench for your starters and we have a deal.']
     return [random.choice(phrases)]
 ######################################FUCK AROUND HERE##########################################################################
 
@@ -492,7 +494,7 @@ if __name__ == '__main__':
         day_of_week='tue', hour=11, minute=15, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_scoreboard_short'], id='scoreboard1',
-        day_of_week='fri,mon,thu', hour=13, minute=40, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='thu,mon', hour=20, minute=5, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_scoreboard_short'], id='scoreboard2',
         day_of_week='sun', hour='16,20', start_date=ff_start_date, end_date=ff_end_date,
