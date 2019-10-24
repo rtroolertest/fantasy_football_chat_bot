@@ -457,17 +457,14 @@ if __name__ == '__main__':
     #trophies:                           tuesday morning at 7:30am local time.
     #score update:                       friday, monday, and tuesday morning at 7:30am local time.
     #score update:                       sunday at 4pm, 8pm east coast time.
-##################################FUCK AROUND HERE##############################################################################
 
-    #sched.add_job(bot_main, 'cron', ['get_matchups'], id='matchups',
-        #day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='9,10,11,12,13,14,15', minute=57, start_date=ff_start_date, end_date=ff_end_date,
-        #timezone=my_timezone, replace_existing=True)
-    
+##################################THIS IS RANDOMSAY##############################################################################
+
     sched.add_job(bot_main, 'cron', ['get_projected_scoreboard'], id='projected_scoreboards',
-        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour=13, minute=10, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='12,16,20' minute=10, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
 
-##################################FUCK AROUND HERE##############################################################################
+##################################THIS IS RANDOMSAY##############################################################################
 
     sched.add_job(bot_main, 'cron', ['get_power_rankings'], id='power_rankings',
         day_of_week='tue,sat', hour=15, minute=30, start_date=ff_start_date, end_date=ff_end_date,
@@ -476,7 +473,7 @@ if __name__ == '__main__':
         day_of_week='sun', hour=12, minute=55, start_date=ff_start_date, end_date=ff_end_date,
         timezone=game_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_matchups'], id='matchups',
-        day_of_week='tue,thu', hour=18, minute=30, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='tue,thu', hour=13, minute=18, start_date=ff_start_date, end_date=ff_end_date,
         timezone=game_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_close_scores'], id='close_scores',
         day_of_week='sun,mon', hour=18, minute=30, start_date=ff_start_date, end_date=ff_end_date,
