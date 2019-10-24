@@ -201,7 +201,11 @@ def random_phrase():
                '-Josh Keller is the only owner to have won a championship and later quit the league.',
                '-Send studs, get duds. It\'s simple math.',
                '-Wednesday night waivers can get a little wierd... I\'ve seen some things..',
-               '-Nobody has yet to win the championship and the trophy race in the same year.']
+               '-Nobody has yet to win the championship and the trophy race in the same year.',
+               '-With this fisher price code, it\'s amazing this even works.',
+               '-If only..',
+               '-PURE SKILL'
+               '-Pay Me has always threatened to destroy this league by creating his own, and it\'s called Regulation Elite',]
     return [random.choice(phrases)]
 ######################################FUCK AROUND HERE##########################################################################
 
@@ -467,7 +471,7 @@ if __name__ == '__main__':
 ##################################THIS IS RANDOMSAY##############################################################################
 
     sched.add_job(bot_main, 'cron', ['get_projected_scoreboard'], id='projected_scoreboards',
-        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='12,16,20', minute=10, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='11,14,17,20', minute=10, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
 
 ##################################THIS IS RANDOMSAY##############################################################################
@@ -479,10 +483,10 @@ if __name__ == '__main__':
         day_of_week='sun', hour=12, minute=55, start_date=ff_start_date, end_date=ff_end_date,
         timezone=game_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_matchups'], id='matchups',
-        day_of_week='tue,thu', hour=13, minute=23, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='tue,thu', hour=19, minute=30, start_date=ff_start_date, end_date=ff_end_date,
         timezone=game_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_close_scores'], id='close_scores',
-        day_of_week='sun,mon', hour=18, minute=30, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='sun,mon,thu', hour=13, minute=32, start_date=ff_start_date, end_date=ff_end_date,
         timezone=game_timezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_final'], id='final',
         day_of_week='tue', hour=1, minute=30, start_date=ff_start_date, end_date=ff_end_date,
