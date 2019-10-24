@@ -451,7 +451,7 @@ if __name__ == '__main__':
 ##################################FUCK AROUND HERE##############################################################################
 
     sched.add_job(bot_main, 'cron', ['get_power_rankings'], id='power_rankings',
-        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour=11, minute=24, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour=11, minute=28, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
 
 ##################################FUCK AROUND HERE##############################################################################
