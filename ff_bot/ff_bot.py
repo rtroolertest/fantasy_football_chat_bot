@@ -197,7 +197,18 @@ def random_phrase():
                -'Good heavens, just look at the time!',
                -'Knock knock, it\'s the Oracle with another trade offer ;)']
     return [random.choice(phrases)]
+######################################FUCK AROUND HERE##########################################################################
 
+#def get_scoreboard_short(league, week=None):
+    #Gets current week's scoreboard
+    #box_scores = league.box_scores(week=week)
+    #score = ['%s %.2f - %.2f %s' % (i.home_team.team_abbrev, i.home_score,
+             #i.away_score, i.away_team.team_abbrev) for i in box_scores
+             #if i.away_team]
+    #text = ['Score Update'] + score
+    #return '\n'.join(text)
+
+######################################FUCK AROUND HERE##########################################################################
 def get_scoreboard_short(league, week=None):
     #Gets current week's scoreboard
     box_scores = league.box_scores(week=week)
@@ -451,7 +462,7 @@ if __name__ == '__main__':
 ##################################FUCK AROUND HERE##############################################################################
 
     sched.add_job(bot_main, 'cron', ['get_power_rankings'], id='power_rankings',
-        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour=11, minute=28, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='10,11,12' minute=31, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
 
 ##################################FUCK AROUND HERE##############################################################################
