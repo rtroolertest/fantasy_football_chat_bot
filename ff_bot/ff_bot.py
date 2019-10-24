@@ -224,7 +224,7 @@ def get_projected_scoreboard(league, week=None):
     score = ['%s %.2f - %.2f %s' % (i.home_team.team_abbrev, get_projected_total(i.home_lineup),
                                     get_projected_total(i.away_lineup), i.away_team.team_abbrev) for i in box_scores
              if i.away_team]
-    text = ['Approximate Projected Scores'] + score + random_phrase()
+    text = ['From the archives:'] + random_phrase()
     return '\n'.join(text)
 
 def get_projected_total(lineup):
@@ -464,7 +464,7 @@ if __name__ == '__main__':
         #timezone=my_timezone, replace_existing=True)
     
     sched.add_job(bot_main, 'cron', ['get_projected_scoreboard'], id='projected_scoreboards',
-        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='9,10,11,12,13,14,15,16', minute=4, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='mon,tue,wed,thu,fri,sat,sun', hour='9,10,11,12,13,14,15,16', minute=6, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
 
 ##################################FUCK AROUND HERE##############################################################################
