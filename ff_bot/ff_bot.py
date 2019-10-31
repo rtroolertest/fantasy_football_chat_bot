@@ -538,7 +538,7 @@ if __name__ == '__main__':
 ##################################THIS IS RANDOMSAY##############################################################################
 
     sched.add_job(bot_main, 'cron', ['get_projected_scoreboard'], id='projected_scoreboards',
-        day_of_week='mon,tue,wed,thu,fri,sat', hour='11,14,20,22', minute=5, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='mon,tue,wed,thu,fri,sat', hour='11,17,22', minute=5, start_date=ff_start_date, end_date=ff_end_date,
         timezone=my_timezone, replace_existing=True)
 
 ##################################THIS IS RANDOMSAY##############################################################################
